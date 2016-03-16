@@ -1,0 +1,6 @@
+<h2>New spec</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: spec_path(@conn, :create) %>
+
+<%= link "Back", to: spec_path(@conn, :index) %>

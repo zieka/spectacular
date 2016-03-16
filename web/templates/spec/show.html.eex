@@ -1,0 +1,28 @@
+<h2>Show spec</h2>
+
+<ul>
+
+  <li>
+    <strong>Item:</strong>
+    <%= @spec.item %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @spec.description %>
+  </li>
+
+  <li>
+    <strong>Test:</strong>
+    <%= @spec.test %>
+  </li>
+
+  <li>
+    <strong>Expectation:</strong>
+    <%= @spec.expectation %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: spec_path(@conn, :edit, @spec) %>
+<%= link "Back", to: spec_path(@conn, :index) %>
